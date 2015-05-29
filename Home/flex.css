@@ -1,0 +1,155 @@
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    list-style: none;
+    font-family: 'Slabo 27px';    
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+a{
+	text-decoration: underline;
+	color: white;
+	font-weight: 700;
+	transition: .31415s;
+}
+
+a:hover{
+	color: #00C5DB;
+}
+
+html{
+    height: 100%;
+    min-height: 100%;
+	background-image: url(footer_lodyas.png);
+	background-repeat: repeat;
+}
+
+body {
+	line-height: 1;
+    height: 100%;
+    min-height: 100%;
+}
+ol, ul {
+	list-style: disc;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.head {
+  height: 50px;
+}
+
+.blog-field{
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    bottom: 0;
+    order: 0;
+    background: rgba(204, 204, 204, 0.1);  
+}
+
+.flex-title{
+ display: flex;
+}
+
+.blog-title{ 
+    flex: 2 0 0;
+    font-size: 46px;
+    color: white;
+}
+
+.blog-date{ 
+    font-size: 32px;
+    color: white;
+}
+
+.blog-subtitle{ 
+    font-size: 38px;
+    color: white;
+}
+
+.blog-content{ 
+    font-size: 18px;
+    color: white;
+}
+
+#flexcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+#flexcontainer-blog {
+    flex-direction: column;
+    display: flex
+    justify-content: center;
+    align-items: center;
+    }
+
+.flex-item-big {
+    margin-top: 1%;
+    margin-bottom: .5%;
+    height: 200px;
+    width: 89%; 
+    text-align: center;
+    vertical-align: middle;
+    order: 0;
+    font-size: 46px;
+    color: white;
+}
+
+.flex-item {
+    height: 200px;
+    width: 29%; 
+    margin: .5%;
+    order: 0;
+    align-self: auto;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+    color: white;
+}
+.sidebar {
+    display: flex;
+    padding: 10px;
+    order: 1;
+}

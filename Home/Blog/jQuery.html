@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="../flex.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="../jquery-1.11.2.js"></script>
+      <script type="text/javascript" src="../script.js"></script>
+      <title>Flex-Test</title>
+   </head>
+   <body>
+       <div id="flexcontainer-blog">
+           <div class="sidebar"><a href="../boxes.html"><span>Home</span></spam></a><a href="">Archives</a><a href="">Projects</a></div>
+      <div class="blog-field">
+    
+         <div class="flex-title">
+            <div class="blog-title">What I learned this week:</div>
+            <div class="blog-date">4/27/2015</div>
+         </div>
+         <div class="blog-subtitle">
+            Experimenting with jQuery<br>
+            <hr>
+         </div>
+         <div class="blog-content">
+            Learning Points
+            <ul>
+               <li>Revisited HTML and CSS basics</li>
+               <li>Using Flexbox</li>
+               <li>CSS resets and cross browser combatibility</li>
+               <li>jQuery tutorials from try.jQuery.com</li>
+               <li>Using Font Awesome logos and importing external libraries and resources into HTML</li>
+            </ul>
+            <p>As I've come to realise the best way to learn something new is to be interested in what you are learning. When I was writing up my CV for sending to prospective employers it occured to me that a website would be a good way to show that I at least have the ability to muster up basic web development fundamentals. This would once agian be a learning experience. It has been some time since I did anything realated to front-end development and would need to go back to basics on this.</p>
+            <br>
+            <p>First things first, HTML, everyone should know what it is and how to use it but lets be honest, it isn't much fun. CSS makes HTML alot more tolerable. When I start making something pretty I tend to start appreciating it for what it is. Something I have created. CSS lets me achieve that feeling. So it was time to learn what I needed to make my small website CSS wise, after some research it came down to the following aspects:</p>
+            <ul>
+               <li>Dynamic resizing of elements in regards to window size</li>
+               <li>Using Flexbox elements instead of table elements to present data</li>
+               <li>Implementing a CSS browser reset to make building my page a more straight forward process</li>
+            </ul>
+            <p>Dynamic resizing of elements is an important factor in front-end design with the surge of users accessing the web from smartphones, tablets etc. So it is important that your page still presents the information it needs to convey. This can be achieved through the use of @media tags in CSS. Using the @media tag and specifing constraints will determine what styles actually load depending on how you are looking at the page.  <br><br>@media screen and (min-width: 1024px) { }<br><br>For example the previous style block will check if the device currently viewing the page has a resolution of X x 1024 resolution or greater and load the styles inside that CSS style block. This has turned out to be a very useful technique and I will need to be aware of this feature when designing any future front-end solutions. </p>
+            <br>
+            <p>I decided to use this oppurtunity to learn how Flexbox elements work. Flex box is a relatively new technology and one I had zero experience in before building this small website. Flexbox was superior in comparison to tables or div elements aligned with CSS that I had used in the past. Flexbox, as I have learned does come with a caveat in that browser compatibility is not fully there yet across all browsers most notably IE 7 However as the intention of the website as I created it was to be a ‘CV’ website to send to prospective employers. I thought I wouldn’t really be interested in working for a software developer that still checked his emails in IE 7 and could give up the ideal of full platform compatibility for the benefit of using flex box.</p>
+            <br>
+            <p>While building the website I continued to come across issues with elements not acting the same way across browsers when they used my CSS. After some googling around for advice I stumbled across a old forum that suggested using a 'CSS-reset'. A CSS reset is a style block inside your stylesheet that sets most, if not all, html tags to a default style. By placign this block at the top of your style sheet any future styling performed on html tags will be overidden by the most recent style block. This gives a sort of 'blank slate' effect to website design that allows a designer to create the effects they want when they want them reducing the chance of problems getting in the way of the creative process.</p>
+            <br>
+            <p>A few of my friends at the University of Waikato been raving about the wonders of jQuery recently and decided this was the perfect time to experiment with it myself. While searching for an appropriate introduction to jQuery I found try.jquery.com. This website not only provided me with a solid introduction to the jQuery framework but used a fun and interactive challenge system coupled with a catchy theme song and friendly presenter. All of this made jQuery both approachable and entertaining. The course took roughly three hours to complete following the videos and reading the jQuery documentation for each funtion I was using to make sure I fully grasped the limitations and capabilities of what it was I was doing. As a first impression of jQuery I can tell you that I am very impressed with how easy it was to use with what seems like an approachable learning curve to someone who, like me, is fairly inexperienced when it comes to web development.</p>
+            <br>
+            <p>The last aspect of this website I want to talk about is the use of fontawesome that provided some very easy to import and visually appealing fonts. I will use them in the future for all logo needs. This concludes what I learned this week while learning how to use jQuery.</p>
+         </div>
+      </div>
+       </div>
+   </body>
+</html>
